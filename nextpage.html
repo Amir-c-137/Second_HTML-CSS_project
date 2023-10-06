@@ -57,6 +57,22 @@
             line-height: 1.6;
             color: #666;
         }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6b6b;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ff4f4f;
+        }
     </style>
 </head>
 <body>
@@ -71,11 +87,6 @@
     </div>
 
     <!-- Add a "Previous" button that uses JavaScript to navigate back to index.html -->
-    <button style="height: 40px; width: 80px; background-color: cyan; font-family: Arial, Helvetica, sans-serif;" onclick="goBack()" class="button">Previous</button>
-    <script>
-        function goBack() {
-            window.history.back(); // Go back to the previous page (index.html)
-        }
-    </script>
+    <a href="index.html" class="button">Previous Page</a>
 </body>
 </html>
